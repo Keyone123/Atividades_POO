@@ -1,14 +1,14 @@
 package kauaMarques.estoque;
 
 public class Produto {
-    private final long codigo;
-    private final String descricao;
-    private double preco_compra;
-    private double preco_venda;
-    private final double lucro;
-    private int quantidade;
-    private final int estoque_minimo;
-    private final Fornecedor fornecedor;
+    protected final long codigo;
+    protected final String descricao;
+    protected double preco_compra;
+    protected double preco_venda;
+    protected final double lucro;
+    protected int quantidade;
+    protected final int estoque_minimo;
+    protected final Fornecedor fornecedor;
 
     public Produto(long codigo, String descricao, int estoque_minimo, double lucro, Fornecedor fornecedor){
         this.codigo = codigo;
@@ -68,5 +68,9 @@ public class Produto {
 
     public double getPreco_venda() {
         return preco_venda;
+    }
+
+    public int getEstoque_minimo(){
+        return estoque_minimo;
     }
 }
